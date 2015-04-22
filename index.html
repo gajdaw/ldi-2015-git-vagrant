@@ -63,17 +63,31 @@
             .reveal .slides section footer {
                 margin-top: 100px;
             }
+            .reveal .slides section h1  {
+                position: relative;
+            }
+            .reveal .slides section h1 .version {
+                position: absolute;
+                width: 100px;
+                height: 20px;
+                bottom: 0;
+                right: 140px;
+                z-index: 100;
+                font-size: 15px;
+                color: red;
+                display: block;
+                letter-spacing: 0.05em;
+            }
         </style>
 	</head>
 
 	<body>
-
 		<div class="reveal">
 			<div class="slides">
 
 				<section>
 					<h3>Warsztat developera</h3>
-                    <h1 style="text-transform: none; font-size: 230%">GIT i VAGRANT</h1>
+                    <h1 style="text-transform: none; font-size: 230%">GIT i VAGRANT<span class="version">ver. 0.1.0</span></h1>
                     <p>
                         <small><a href="http://gajdaw.pl">Włodzimierz Gajda</a> <br>
                         <a href="http://gajdaw.pl">http://gajdaw.pl</a></small>
