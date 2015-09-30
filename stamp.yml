@@ -4,3 +4,10 @@
 filename:    'version.txt'
 regex:       '|(?P<version>[\d\.]+)|'
 replacement: '{{ version }}'
+
+replacements:
+
+  -
+    filename:    'index.html'
+    regex:       '/<span class="version">ver. ([\d\.]+)<\/span>/'
+    replacement: '<span class="version">ver. {{ version }}<\/span>'
